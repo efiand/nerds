@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Sedona",
+    "description": "Информационный сайт для туристов",
+    "url": "#",
+    "img": "img/product-1.png"
+  },
+  {
+    "name": "Pink App",
+    "description": "Продуктовый лендинг<br>приложения для iOS и Android",
+    "url": "https://efiand.github.io/pink",
+    "img": "img/product-2.png"
+  },
+  {
+    "name": "Barbershop",
+    "description": "Сайт салона красоты.<br>Для мужчин, да.",
+    "url": "#",
+    "img": "img/product-3.png"
+  },
+  {
+    "name": "Mishka",
+    "description": "Интернет-магазин<br>вязаных игрушек",
+    "url": "#",
+    "img": "img/product-4.png"
+  },
+  {
+    "name": "A Plus",
+    "description": "Лендинг курсов повышения квалификации",
+    "url": "#",
+    "img": "img/product-5.png"
+  },
+  {
+    "name": "Кваст",
+    "description": "Промо-сайт производителя крафтового кваса",
+    "url": "https://efiand.github.io/kvast",
+    "img": "img/product-6.png"
+  },
+  {
+    "name": "Хваст",
+    "description": "Промо-сайт производителя крафтового кваса",
+    "url": "https://efiand.github.io/kvast",
+    "img": "img/product-6.png"
+  },
+  {
+    "name": "Psedona",
+    "description": "Информационный сайт для туристов",
+    "url": "#",
+    "img": "img/product-1.png"
+  },
+  {
+    "name": "Blink App",
+    "description": "Продуктовый лендинг<br>приложения для iOS и Android",
+    "url": "https://efiand.github.io/pink",
+    "img": "img/product-2.png"
+  },
+  {
+    "name": "Kishka",
+    "description": "Интернет-магазин<br>вязаных игрушек",
+    "url": "#",
+    "img": "img/product-4.png"
+  },
+  {
+    "name": "Marbershop",
+    "description": "Сайт салона красоты.<br>Для мужчин, да.",
+    "url": "#",
+    "img": "img/product-3.png"
+  },
+  {
+    "name": "Z Plus",
+    "description": "Лендинг курсов повышения квалификации",
+    "url": "#",
+    "img": "img/product-5.png"
+  },
+  {
+    "name": "Т Кваст",
+    "description": "Промо-сайт производителя крафтового кваса",
+    "url": "https://efiand.github.io/kvast",
+    "img": "img/product-6.png"
+  },
+  {
+    "name": "F Plus",
+    "description": "Лендинг курсов повышения квалификации",
+    "url": "#",
+    "img": "img/product-5.png"
+  },
+  {
+    "name": "Umishka",
+    "description": "Интернет-магазин<br>вязаных игрушек",
+    "url": "#",
+    "img": "img/product-4.png"
+  }
+]

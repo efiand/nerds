@@ -1,0 +1,39 @@
+{% extends "source/layouts/default/config.njk" %}
+
+{% block layout %}
+  <!DOCTYPE html>
+  <html lang="ru" prefix="og: http://ogp.me/ns#">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width">
+      <title>{{ pageTitle }}</title>
+      <meta name="format-detection" content="telephone=no">
+      <meta name="format-detection" content="address=no">
+      <link rel="canonical" href="{{ url }}">
+      <link rel="stylesheet" href="/css/styles{{ minSuffix }}.css">
+      <link rel="preload" href="/css/styles{{ minSuffix }}.css" as="style">
+      <link rel="preload" href="/js/scripts{{ minSuffix }}.js" as="script">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta property="og:title" content="{{ pageTitle }}">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="{{ url }}">
+      <meta property="og:determiner" content="the">
+      <meta property="og:locale" content="ru_RU">
+      <meta property="og:site_name" content="{{ siteName }}">
+    </head>
+
+    <body>
+      {% include "source/components/header/header.njk" %}
+
+      <main class="page">
+        {% block main %}{# Основная часть страницы #}{% endblock %}
+      </main>
+
+      {% include "source/components/footer/footer.njk" %}
+
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="/js/scripts{{ minSuffix }}.js"></script>
+    </body>
+  </html>
+{% endblock %}

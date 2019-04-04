@@ -1,0 +1,42 @@
+@mixin backgroundImage ($pict, $ext) {
+  background-image: url("../img/#{$pict}.#{$ext}");
+
+  @media (#{$blinkDetector}: 0) and (min-resolution: 0.001dpcm) {
+    background-image: url("../img/#{$pict}.webp");
+  }
+}
+
+@mixin fontFace ($family, $weight, $style, $local, $url) {
+  @font-face {
+    font-style: $style;
+    font-weight: $weight;
+    font-family: "#{$family}";
+    font-display: swap;
+    src: local("#{$local}"), url("../fonts/#{$url}.woff2") format("woff2"), url("../fonts/#{$url}.woff") format("woff");
+  }
+}
+
+@mixin crossIcon ($size, $thickness) {
+  box-sizing: border-box;
+  width: $size;
+  height: $size;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: ($size / 2) - ($thickness / 2);
+    left: 0;
+    width: $size;
+    height: $thickness;
+    background-color: currentColor;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

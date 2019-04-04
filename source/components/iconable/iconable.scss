@@ -1,0 +1,69 @@
+.iconable {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icons.svg");
+    background-repeat: no-repeat;
+    background-size: 47px 239px;
+  }
+
+  &--cart {
+    padding-left: 40px;
+
+    &::before {
+      top: 7px;
+      width: 15px;
+      height: 15px;
+      background-position: -10px -10px;
+    }
+  }
+
+  &--checkbox {
+    &::before {
+      width: 27px;
+      height: 23px;
+      background-position: -10px -45px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/icons.svg");
+      background-repeat: no-repeat;
+      background-position: -10px -88px;
+      background-size: 47px 239px;
+    }
+  }
+
+  &--social-1 {
+    &::before {
+      width: 26px;
+      height: 15px;
+      background-position: -10px -131px;
+    }
+  }
+
+  &--social-2 {
+    &::before {
+      width: 12px;
+      height: 22px;
+      background-position: -10px -166px;
+    }
+  }
+
+  &--social-3 {
+    &::before {
+      width: 21px;
+      height: 21px;
+      background-position: -10px -208px;
+    }
+  }
+}

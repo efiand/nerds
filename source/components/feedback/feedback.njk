@@ -1,0 +1,28 @@
+<section class="feedback modal" id="feedback">
+  <form class="feedback__form modal__inner post post--invalid-detect post--stored"
+    {{ "action-xhr" if ampMode else "action" }}="https://echo.htmlacademy.ru" method="post">
+    <h2 class="feedback__heading">Напишите нам</h2>
+
+    <label class="feedback__group">
+      Ваше имя:
+      <input class="feedback__field field field--stored" name="name" type="text"
+        pattern="[А-ЯЁA-Z][а-яёa-z]* [А-ЯЁA-Z][а-яёa-z]*" placeholder="Имя Фамилия" required>
+    </label>
+
+    <label class="feedback__group">
+      Ваш e-mail:
+      <input class="feedback__field field field--stored"
+        name="email" type="email" placeholder="email@example.com" required>
+    </label>
+
+    <label class="feedback__group feedback__group--message">
+      Текст письма:
+      <textarea class="feedback__field feedback__field--message field field--message field--site-error-place"
+        name="message" placeholder="В свободной форме" required></textarea>
+    </label>
+
+    <button class="feedback__button button post__submit" type="submit">Отправить</button>
+
+    <button class="feedback__closer modal__closer" aria-label="Закрыть окно"></button>
+  </form>
+</section>

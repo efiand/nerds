@@ -1,0 +1,50 @@
+html {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $sansSerif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+  outline: none;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: color, opacity, background-color, border-color, box-shadow;
+  -webkit-tap-highlight-color: transparent;
+
+  &:active {
+    transition-duration: 0.1s;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  clip: rect(0, 0, 0, 0);
+
+  &--no-mobile {
+    @media (max-width: 767px) {
+      position: static;
+    }
+  }
+}

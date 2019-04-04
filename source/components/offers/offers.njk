@@ -1,0 +1,12 @@
+<section class="offers container">
+  <h2 class="visually-hidden">Наши предложения</h2>
+  <ul class="offers__list">
+    {% for offer in offers %}
+      <li class="offers__item {{ offer.themeClass }}">
+        <h3 class="offers__heading">{{ offer.heading }}</h3>
+        <p class="offers__description">{{ offer.description }}</p>
+        <a class="offers__button button" href="#">Заказать</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

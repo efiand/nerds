@@ -1,0 +1,21 @@
+<section class="teasers page__section tabs">
+  <h2 class="visually-hidden">Тизеры</h2>
+
+  <ul class="teasers__list tabs__list container">
+    {% for teaser in teasers %}
+      <li class="teasers__item tabs__item">
+        <b class="teasers__lead page__lead">{{ teaser.lead }}</b>
+        <p class="teasers__description">{{ teaser.description }}</p>
+        <a class="teasers__link button" href="#">Узнать больше</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="teasers__controls tabs__controls hidden">
+    {% for teaser in teasers %}
+      <li>
+        <button class="teasers__control tabs__control" aria-label="Показать слайд № {{ loop.index }}"></button>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

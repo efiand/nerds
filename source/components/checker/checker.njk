@@ -1,0 +1,12 @@
+<li class="checker {{ mixClass }}">
+  <input class="visually-hidden" id="{{ checkerName }}-{{ checker.value }}"
+    name="{{ checkerName }}" value="{{ checker.value }}" type="{{ checkerType }}"
+    {% if checker.checked %}checked{% endif %}
+    {% if checker.disabled %}disabled{% endif %}>
+
+  <label class="checker__label checker__label--{{ checkerType }}
+    {% if checkerType === "checkbox" %}iconable iconable--checkbox{% endif %}"
+    for="{{ checkerName }}-{{ checker.value }}">
+    {{ checker.label }}
+  </label>
+</li>

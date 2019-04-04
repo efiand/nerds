@@ -1,0 +1,18 @@
+{
+  "src": "source/img/icons/**/*.svg",
+  "dest": {
+    "icons": "tmp/icons",
+    "sprite": "tmp"
+  },
+  "options": {
+    "baseSize": 1,
+    "cssFile": "icons.css",
+    "padding": 10,
+    "preview": {
+      "sprite": ""
+    },
+    "svg": {
+      "sprite": "../build/img/icons.svg"
+    }
+  }
+}

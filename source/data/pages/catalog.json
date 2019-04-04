@@ -1,0 +1,99 @@
+{
+  "pageName": "Каталог",
+  "menu": [
+    {
+      "text": "Студия",
+      "href": "index.html#about"
+    },
+    {
+      "text": "Клиенты",
+      "href": "index.html#partners"
+    },
+    {
+      "text": "Магазин"
+    },
+    {
+      "text": "Контакты",
+      "href": "#contacts"
+    }
+  ],
+  "radios": [
+    {
+      "value": "adaptive",
+      "label": "Адаптивная",
+      "checked": true
+    },
+    {
+      "value": "fix",
+      "label": "Фиксированная"
+    },
+    {
+      "value": "fliud",
+      "label": "Резиновая"
+    }
+  ],
+  "checkboxes": [
+    {
+      "value": "slider",
+      "label": "Слайдер",
+      "checked": true,
+      "disabled": true
+    },
+    {
+      "value": "advantages",
+      "label": "Блок преимуществ",
+      "disabled": true
+    },
+    {
+      "value": "news",
+      "label": "Новости",
+      "checked": true
+    },
+    {
+      "value": "gallery",
+      "label": "Галерея"
+    },
+    {
+      "value": "cart",
+      "label": "Корзина"
+    }
+  ],
+  "products": [
+    {
+      "name": "Sedona",
+      "description": "Информационный сайт для туристов",
+      "url": "#",
+      "img": "img/product-1.png"
+    },
+    {
+      "name": "Pink App",
+      "description": "Продуктовый лендинг<br>приложения для iOS и Android",
+      "url": "https://efiand.github.io/pink",
+      "img": "img/product-2.png"
+    },
+    {
+      "name": "Barbershop",
+      "description": "Сайт салона красоты.<br>Для мужчин, да.",
+      "url": "#",
+      "img": "img/product-3.png"
+    },
+    {
+      "name": "Mishka",
+      "description": "Интернет-магазин<br>вязаных игрушек",
+      "url": "#",
+      "img": "img/product-4.png"
+    },
+    {
+      "name": "A Plus",
+      "description": "Лендинг курсов повышения квалификации",
+      "url": "#",
+      "img": "img/product-5.png"
+    },
+    {
+      "name": "Кваст",
+      "description": "Промо-сайт производителя крафтового кваса",
+      "url": "https://efiand.github.io/kvast",
+      "img": "img/product-6.png"
+    }
+  ]
+}

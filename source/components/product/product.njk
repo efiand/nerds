@@ -1,0 +1,13 @@
+<li class="product {{ mixClass }}">
+  {{ img(product.img, product.name, "product__img", 360, 576) }}
+
+  <div class="product__info">
+    <a class="product__link" href="{{ product.url }}">
+      <h3 class="product__name">{{ product.name }}</h3>
+    </a>
+
+    <p class="product__description">{{ product.description }}</p>
+
+    <a class="product__button button" href="{{ product.url }}">9900 руб.</a>
+  </div>
+</li>

@@ -1,0 +1,100 @@
+.feedback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1160px;
+  margin: -40px auto 40px;
+  padding: 68px 100px 84px;
+  background-color: #ffffff;
+
+  @media (max-width: 959px) {
+    justify-content: flex-start;
+  }
+
+  .modal--js & {
+    width: 760px;
+    margin: 0;
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  }
+}
+
+.feedback__heading {
+  width: 100%;
+  margin: 0 60px 42px 0;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.feedback__group {
+  width: calc(50% - 20px);
+  margin: 0 0 35px;
+  font-weight: 700;
+  line-height: 18px;
+
+  &--message {
+    width: 100%;
+  }
+}
+
+.feedback__field {
+  width: 100%;
+  margin: 8px 0 0;
+  padding: 14px;
+  font-weight: 400;
+  color: rgba($colorTextMiddle, 0.5);
+  -webkit-text-fill-color: rgba($colorTextMiddle, 0.5);
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+
+  &:hover {
+    border-color: #b4b9bb;
+  }
+
+  &:focus {
+    color: $colorTextMiddle;
+    -webkit-text-fill-color: $colorTextMiddle;
+    border-color: #000000;
+  }
+
+  &--message {
+    height: 118px;
+  }
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+.feedback__button {
+  width: 260px;
+  margin: 12px 0 0;
+}
+
+.feedback__closer {
+  @include crossIcon(28px, 4px);
+
+  position: absolute;
+  top: 75px;
+  right: 86px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.5s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &::before,
+  &::after {
+    background-color: $colorAccent;
+  }
+}

@@ -1,0 +1,34 @@
+.products {
+  display: flex;
+}
+
+.products__filters {
+  width: 260px;
+  margin: 0 140px 48px 0;
+}
+
+.products__wrapper {
+  margin: 0 0 48px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  width: 360px;
+  margin: 0 0 32px;
+
+  &:nth-child(odd) {
+    margin-right: 40px;
+  }
+}
+
+.products__error {
+  margin: 0 0 48px;
+}

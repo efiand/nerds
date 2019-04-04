@@ -1,0 +1,13 @@
+{% set minSuffix = "" if isDev else ".min" %}
+{% set pageTitle = siteName + titleDelimiter + pageName %}
+
+{# Что будет в адресной строке браузера #}
+{% set url = host + "/" + page + ".html" %}
+
+{# Глобальные макросы #}
+{% from "source/layouts/default/macro/img.njk" import img with context %}
+
+{# Внедрение разметки с заменой всех ссылок от корня на относительные #}
+{% filter manageUrl(page) %}
+  {% block layout %}{% endblock %}
+{% endfilter %}

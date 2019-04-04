@@ -1,0 +1,17 @@
+<section class="socials container">
+  <h2 class="visually-hidden">Социальные сети</h2>
+
+  <ul class="socials__list {{ mixClass }}">
+    {% for label in socials %}
+      <li>
+        <a class="socials__link iconable iconable--social-{{ loop.index }}"
+          href="#" aria-label="{{ label }}"></a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="socials__info">
+    <b class="socials__lead">Давайте дружить, это выгодно!</b>
+    <p class="socials__description">Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+</section>

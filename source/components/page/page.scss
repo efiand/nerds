@@ -1,0 +1,26 @@
+.page {
+  // IE 11, иначе будет временная прокрутка для модалки
+  display: block;
+}
+
+.page__header {
+  margin: 0 0 52px;
+  padding: 58px 0 108px;
+  background-color: $colorBack;
+}
+
+.page__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.page__section {
+  margin-bottom: 80px;
+}
+
+.page__lead {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}

@@ -1,0 +1,36 @@
+.contacts {
+  min-height: 308px;
+  margin: 0 0 70px;
+  padding: 54px 0;
+  overflow-x: hidden;
+  background-color: #f1eee9;
+}
+
+.contacts__content {
+  position: relative;
+  z-index: 1;
+  width: 220px;
+  padding: 50px 50px 46px;
+
+  background-color: #ffffff;
+}
+
+.contacts__name {
+  display: block;
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__description {
+  margin: 0 0 18px;
+  line-height: 18px;
+  color: $colorTextLighten;
+}
+
+.contacts__button {
+  width: 100%;
+  margin: 18px 0 0;
+}

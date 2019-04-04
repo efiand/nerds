@@ -1,0 +1,40 @@
+<section class="about container" id="about">
+  <h2 class="visually-hidden">О компании</h2>
+
+  <div class="about__main">
+    <b class="about__lead">{{ pageDescription }}</b>
+    <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+
+    <h3 class="about__subheading">Выполняем заказы на разработку:</h3>
+    <ul class="about__list">
+      <li class="about__item">Веб-сайтов любой сложности</li>
+      <li class="about__item">Мобильных приложений для iOS и Android</li>
+      <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
+    </ul>
+  </div>
+
+  <div class="about__digits">
+    {{ img("img/logo-nerds-alter.png", "Альтернативный логотип «Нердс»", "about__logo", 360, 208) }}
+
+    <h3 class="about__subheading about__subheading--digits">С 2004 года любим точность во всем:</h3>
+
+    <table class="about__table">
+      <thead class="about__table-header">
+        <tr>
+          <th class="about__table-cell">Уровень самоотдачи</th>
+          <th class="about__table-cell">Соблюдение сроков</th>
+          <th class="about__table-cell">Минимальная предоплата</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {% for value in [146, 100, 50] %}
+            <td class="about__table-cell about__table-cell--value">
+              {{ value }}<span class="about__unit">%</span>
+            </td>
+          {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

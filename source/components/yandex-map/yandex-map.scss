@@ -1,0 +1,24 @@
+.yandex-map {
+  position: relative;
+}
+
+.yandex-map__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yandex-map__fallback-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  &--ready {
+    display: none;
+  }
+}

@@ -1,0 +1,107 @@
+.product {
+  position: relative;
+  height: 616px;
+  overflow: hidden;
+  background-color: $colorBack;
+  border-radius: 4px 4px 0 0;
+  transition: box-shadow 0.5s ease-in-out;
+
+  @mixin activeState {
+    // Дублирование свойств нужно для IE 11
+    // Он не понимает hover в одном правиле с focus-within
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+
+    &::before {
+      background-color: $colorBackDark;
+    }
+
+    .product__info {
+      bottom: 0;
+      transition: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+  }
+
+  &:hover {
+    @include activeState;
+  }
+
+  &:focus-within {
+    @include activeState;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    background-color: inherit;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 23px 0 0 #ffffff, 46px 0 0 #ffffff;
+  }
+}
+
+.product__img {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.product__info {
+  position: absolute;
+  bottom: -800px;
+  left: 0;
+  width: 276px;
+  max-height: 497px;
+  padding: 28px 42px 42px;
+  overflow: auto;
+  text-align: center;
+  background-color: $colorBack;
+  transition: bottom 0s 0.5s;
+
+  // Для того, чтобы смена прозрачности шла только на hover или focus-within,
+  // а в IE на фокусе прозрачности не было
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+.product__link {
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.product__name {
+  margin: 0 0 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.product__description {
+  margin: 0 0 30px;
+  line-height: 18px;
+  color: $colorTextLighten;
+}
+
+.product__button {
+  width: 200px;
+}

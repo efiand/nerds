@@ -1,0 +1,19 @@
+.tabs__list {
+  position: relative;
+}
+
+.tabs__item {
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+
+  &--hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1.5s, opacity 1.5s ease-in-out;
+  }
+}

@@ -1,0 +1,10 @@
+{% extends template %}
+
+{% block main %}
+  <h1 class="visually-hidden">{{ siteName }}</h1>
+
+  {% include "source/components/teasers/teasers.njk" %}
+  {% include "source/components/offers/offers.njk" %}
+  {% include "source/components/about/about.njk" %}
+  {% include "source/components/partners/partners.njk" %}
+{% endblock %}

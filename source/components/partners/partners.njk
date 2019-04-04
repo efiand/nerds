@@ -1,0 +1,14 @@
+<section class="partners page__section container" id="partners">
+  <h2 class="visually-hidden">Партнёры компании</h2>
+
+  <ul class="partners__list">
+    {% for partner in partners %}
+      <li class="partners__item">
+        <a class="partners__link" href="{{ partner.url }}">
+          {{ img("img/partner-" + loop.index + ".png", "Партнёр компании: " + partner.name,
+            "partners__img", partner.width, partner.height) }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

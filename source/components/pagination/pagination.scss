@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__button {
+  min-width: 50px;
+  margin: 0 12px 12px 0;
+  color: #000000;
+  background-color: $colorBack;
+
+  &[href]:hover,
+  &[type]:not(:disabled):hover,
+  &:focus {
+    background-color: #dfdfdf;
+  }
+
+  &[href]:active,
+  &[type]:not(:disabled):active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+  }
+
+  &:not([href]) {
+    &,
+    &:hover,
+    &:active {
+      padding: 14px 16px 12px;
+      color: inherit;
+      background-color: #ffffff;
+      border: 3px solid #dbdbdb;
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+  }
+
+  &--next {
+    width: 260px;
+  }
+}

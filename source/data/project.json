@@ -1,0 +1,48 @@
+{
+  "host": "https://efiand.github.io/nerds",
+  "siteName": "Дизайн-студия «Нёрдс»",
+  "template": "source/layouts/default/index.njk",
+  "tasks": {
+    "build": [
+      "clean",
+      "tmp",
+      "styles",
+      "scripts",
+      "html",
+      "img",
+      "icons",
+      "webp",
+      "static"
+    ],
+    "dev": [
+      "build",
+      "server"
+    ]
+  },
+  "watchers": [
+    [
+      ["source/**/*.js"],
+      ["scripts"]
+    ],
+    [
+      ["source/**/*.scss"],
+      ["styles"]
+    ],
+    [
+      ["source/**/*.njk"],
+      ["html"]
+    ],
+    [
+      "source/img/**/*.{jpg,png}",
+      ["img", "webp"]
+    ],
+    [
+      "source/img/icons/**/*.svg",
+      ["icons"]
+    ],
+    [
+      "source/static/**/*",
+      ["static"]
+    ]
+  ]
+}

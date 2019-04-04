@@ -1,0 +1,65 @@
+.sorting {
+  display: flex;
+  margin: 6px 0 48px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting__heading {
+  width: 360px;
+  margin: 0 40px 0 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.sorting__props {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 320px;
+  margin: 0;
+  padding: 2px 0 0;
+  list-style: none;
+}
+
+.sorting__order {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+  margin: 0;
+  padding: 5px 0 0;
+  list-style: none;
+}
+
+.sorting__link {
+  display: block;
+  margin: 0 26px 8px 0;
+  font-size: 14px;
+
+  &[href] {
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &--decrease {
+    margin: 0;
+    border-top: 10px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
+  &--increase {
+    margin: 0;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid;
+    border-left: 5px solid transparent;
+  }
+}

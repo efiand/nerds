@@ -1,0 +1,54 @@
+<form class="filters {{ mixClass }}" action="//echo.htmlacademy.ru" method="post">
+  <fieldset class="filters__group">
+    <legend class="filters__group-heading">Стоимость:</legend>
+
+    <div class="filters__price-group range">
+      <div class="filters__range range__block hidden">
+        <div class="filters__progress range__progress"></div>
+        <button class="filters__range-control range__control-min"
+          type="button" aria-label="Установить минимум">
+        </button>
+        <button class="filters__range-control range__control-max"
+          type="button" aria-label="Установить максимум">
+        </button>
+      </div>
+
+      <label class="filters__price-label" for="price-min">От</label>
+      <input class="filters__price-field field range__input-min" id="price-min"
+        name="price-min" value="0" type="number" min="0" max="13900" step="100">
+
+      <label class="filters__price-label" for="price-max">До</label>
+      <input class="filters__price-field field range__input-max" id="price-max"
+        name="price-max" value="15000" type="number" min="2100" max="20000" step="100">
+    </div>
+  </fieldset>
+
+  <fieldset class="filters__group">
+    <legend class="filters__group-heading">Сетка:</legend>
+
+    <ul class="filters__options">
+      {% set mixClass = "filters__option" %}
+      {% set checkerName = "grid" %}
+      {% set checkerType = "radio" %}
+
+      {% for checker in radios %}
+        {% include "source/components/checker/checker.njk" %}
+      {% endfor %}
+    </ul>
+  </fieldset>
+
+  <fieldset class="filters__group">
+    <legend class="filters__group-heading">Особенности:</legend>
+
+    <ul class="filters__options">
+      {% set checkerName = "features" %}
+      {% set checkerType = "checkbox" %}
+
+      {% for checker in checkboxes %}
+        {% include "source/components/checker/checker.njk" %}
+      {% endfor %}
+    </ul>
+  </fieldset>
+
+  <button class="filters__button {{ mixButtonClass }}" type="submit">Показать</button>
+</form>

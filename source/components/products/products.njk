@@ -1,0 +1,22 @@
+<section class="products container" id="products">
+  {% set mixClass = "products__filters" %}
+  {% set mixButtonClass = "button" %}
+  {% include "source/components/filters/filters.njk" %}
+
+  <div class="products__wrapper">
+    {% set mixClass = "products__sorting" %}
+    {% include "source/components/sorting/sorting.njk" %}
+
+    <ul class="products__list">
+      {% set mixClass = "products__item" %}
+      {% for product in products %}
+        {% include "source/components/product/product.njk" %}
+      {% endfor %}
+    </ul>
+
+    <p class="products__error hidden"></p>
+
+    {% set mixClass = "products__pagination" %}
+    {% include "source/components/pagination/pagination.njk" %}
+  </div>
+</section>

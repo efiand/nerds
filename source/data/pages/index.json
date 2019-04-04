@@ -1,0 +1,81 @@
+{
+  "pageName": "",
+  "titleDelimiter": "",
+  "homeHrefCode": null,
+  "menu": [
+    {
+      "text": "Студия",
+      "href": "#about"
+    },
+    {
+      "text": "Клиенты",
+      "href": "#partners"
+    },
+    {
+      "text": "Магазин",
+      "href": "catalog.html"
+    },
+    {
+      "text": "Контакты",
+      "href": "#contacts"
+    }
+  ],
+  "teasers": [
+    {
+      "lead": "Долго, дорого, скрупулезно",
+      "description": "Математически выверенный дизайн<br>для вашего сайта или мобильного приложения."
+    },
+    {
+      "lead": "Любим математику как никто другой",
+      "description": "Никакого креатива, только математические формулы<br>для расчета идеальных пропорций."
+    },
+    {
+      "lead": "Только ночь, только хардкор",
+      "description": "Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается."
+    }
+  ],
+  "offers": [
+    {
+      "heading": "Веб-сайты",
+      "description": "Мир никогда не будет прежним после того как увидит ваш сайт!"
+    },
+    {
+      "heading": "Приложения",
+      "description": "Покорите топ-10 приложений в AppStore и Google Play",
+      "themeClass": "offers__item--theme-2"
+    },
+    {
+      "heading": "Презентации",
+      "description": "Вы даже не подозреваете, насколько вы изумительны!",
+      "themeClass": "offers__item--theme-3"
+    }
+  ],
+  "partners": [
+    {
+      "name": "HTML Academy",
+      "url": "https://htmlacademy.ru/intensive/htmlcss",
+      "width": "199",
+      "height": "68",
+      "custom": "style=\"margin: 12px 0 0\""
+    },
+    {
+      "name": "Barbershop Borodinski",
+      "url": "#",
+      "width": "209",
+      "height": "88"
+    },
+    {
+      "name": "Pink",
+      "url": "https://efiand.github.io/pink",
+      "width": "185",
+      "height": "52"
+    },
+    {
+      "name": "Mishka",
+      "url": "#",
+      "width": "173",
+      "height": "84",
+      "custom": "style=\"margin: 4px 0 0\""
+    }
+  ]
+}

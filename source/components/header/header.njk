@@ -1,0 +1,37 @@
+<header class="header">
+  <nav class="header__nav container">
+    <a class="header__logo-link" {{ homeHrefCode }}>
+      {% if ampMode %}
+        <amp-img class="header__logo" src="img/logo-nerds.svg"
+          width="160" height="65" alt="Логотип компании «Нердс»">
+        </amp-img>
+      {% else %}
+        <img class="header__logo" src="img/logo-nerds.svg"
+          width="160" height="65" alt="Логотип компании «Нердс»">
+      {% endif %}
+    </a>
+
+    <ul class="header__nav-list header__nav-list--main">
+      {% for item in menu %}
+        {% if item.href %}
+          {% set href = "href=\"" + item.href + "\"" %}
+        {% else %}
+          {% set href = "" %}
+        {% endif %}
+        <li>
+          <a class="header__nav-link" {{ href }}>
+            {{ item.text }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <ul class="header__nav-list header__nav-list--user">
+      <li>
+        <a class="header__nav-link header__nav-link--user iconable iconable--cart" href="#">
+          Корзина
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

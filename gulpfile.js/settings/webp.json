@@ -1,0 +1,10 @@
+{
+  "src": [
+    "source/img/content/**/*.{jpg,png}",
+    "source/img/backgrounds/**/*.{jpg,png,svg}"
+  ],
+  "options": {
+    "quality": 82
+  },
+  "dest": "build/img"
+}

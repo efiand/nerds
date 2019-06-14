@@ -51,7 +51,7 @@ class Products {
 
     ajax({
       url: `app/products.json`,
-      statusPlace: this.errorPlace,
+      statusPlace: self.errorPlace,
       callback(response) {
         self.listBuilder(response);
       },
@@ -91,9 +91,9 @@ class Products {
         const headerLink = element.querySelector(`.product__link`);
         const header = headerLink.querySelector(`.product__name`);
         headerLink.href = item.href;
-        header.textContent = item.name;
+        header.innerHTML = item.name;
 
-        element.querySelector(`.product__description`).textContent = item.description;
+        element.querySelector(`.product__description`).innerHTML = item.description;
         element.querySelector(`.product__button`).href = item.url;
 
         self.list.insertAdjacentElement(`beforeend`, element);

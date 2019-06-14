@@ -558,7 +558,7 @@ function _createClass(Constructor, protoProps, staticProps) {
           var self = this;
           ajax({
             url: "app/products.json",
-            statusPlace: this.errorPlace,
+            statusPlace: self.errorPlace,
             callback: function callback(response) {
               self.listBuilder(response);
             },
@@ -591,8 +591,8 @@ function _createClass(Constructor, protoProps, staticProps) {
               var headerLink = element.querySelector(".product__link");
               var header = headerLink.querySelector(".product__name");
               headerLink.href = item.href;
-              header.textContent = item.name;
-              element.querySelector(".product__description").textContent = item.description;
+              header.innerHTML = item.name;
+              element.querySelector(".product__description").innerHTML = item.description;
               element.querySelector(".product__button").href = item.url;
               self.list.insertAdjacentElement("beforeend", element);
             }

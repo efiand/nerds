@@ -8,8 +8,8 @@ gulp.task(`styles:compile`, () => {
     .pipe(plugins.plumber())
     .pipe(plugins.include())
     .pipe(plugins.sass())
-    .pipe(plugins.combineMq())
     .pipe(plugins.postcss([
+      require(`mqpacker`)(),
       require(`autoprefixer`)()
     ]))
     .pipe(plugins.csscomb())
